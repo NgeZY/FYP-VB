@@ -3,16 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\acer\\source\\repos\\fyp-vb\\fyp\\fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:FYP\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\acer\\source\\repos\\fyp-vb\\fyp\\fyp\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\acer\\source\\repos\\fyp-vb\\fyp\\fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\acer\\source\\repos\\fyp-vb\\fyp\\fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\acer\\source\\repos\\fyp-vb\\fyp\\fyp\\form3.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form3.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:FYP\\Form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FYP\\Form2.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\acer\\source\\repos\\fyp-vb\\fyp\\fyp\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form2.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FYP\\Form2.Designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +42,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form3.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb",
+              "RelativeDocumentMoniker": "FYP\\Form3.vb",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb [Design]*",
+              "RelativeToolTip": "FYP\\Form3.vb [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-09T16:04:12.059Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Form3.vb",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb",
+              "RelativeDocumentMoniker": "FYP\\Form3.vb",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb*",
+              "RelativeToolTip": "FYP\\Form3.vb*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-09T16:02:29.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form3.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.Designer.vb",
+              "RelativeDocumentMoniker": "FYP\\Form3.Designer.vb",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.Designer.vb*",
+              "RelativeToolTip": "FYP\\Form3.Designer.vb*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-09T16:02:25.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.vb",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
+              "RelativeDocumentMoniker": "FYP\\Form1.vb",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb*",
+              "RelativeToolTip": "FYP\\Form1.vb*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAYAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-09T14:03:08.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Form1.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.Designer.vb",
+              "RelativeDocumentMoniker": "FYP\\Form1.Designer.vb",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.Designer.vb",
+              "RelativeToolTip": "FYP\\Form1.Designer.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-09T15:47:59.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Form2.Designer.vb",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form2.Designer.vb",
+              "RelativeDocumentMoniker": "FYP\\Form2.Designer.vb",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form2.Designer.vb",
+              "RelativeToolTip": "FYP\\Form2.Designer.vb",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAswB4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-09T15:46:39.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form2.vb [Design]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form2.vb",
               "RelativeDocumentMoniker": "FYP\\Form2.vb",
@@ -38,25 +135,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
-              "RelativeDocumentMoniker": "FYP\\Form1.vb",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
-              "RelativeToolTip": "FYP\\Form1.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T14:03:08.665Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Form1.vb [Design]",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
               "RelativeDocumentMoniker": "FYP\\Form1.vb",
-              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb [Design]",
-              "RelativeToolTip": "FYP\\Form1.vb [Design]",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb [Design]*",
+              "RelativeToolTip": "FYP\\Form1.vb [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-08T09:50:22.703Z",
               "EditorCaption": " [Design]"
