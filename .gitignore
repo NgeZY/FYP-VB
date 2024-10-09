@@ -1,5 +1,14 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
+﻿# Ignore build results
+bin/
+obj/
 
-/FYP/FYP/FYP.vbproj
+# User-specific files
+*.user
+*.suo
+*.vssscc
+*.vspscc
+
+# Windows Installer files
+*.cab
+*.msi
+
