@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\usermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\usermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,24 +18,23 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Loginform.vb",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
-              "RelativeDocumentMoniker": "FYP\\Loginform.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
-              "RelativeToolTip": "FYP\\Loginform.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserManagement.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\UserManagement.vb",
+              "RelativeDocumentMoniker": "FYP\\UserManagement.vb",
+              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\UserManagement.vb [Design]",
+              "RelativeToolTip": "FYP\\UserManagement.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T16:31:40.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T16:39:36.155Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Loginform.vb [Design]",
               "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
               "RelativeDocumentMoniker": "FYP\\Loginform.vb",
