@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form3.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form1.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\form3.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\form3.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,83 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form3.vb",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb",
-              "RelativeDocumentMoniker": "FYP\\Form3.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb",
-              "RelativeToolTip": "FYP\\Form3.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T16:17:01.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Form1.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.Designer.vb",
-              "RelativeDocumentMoniker": "FYP\\Form1.Designer.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.Designer.vb",
-              "RelativeToolTip": "FYP\\Form1.Designer.vb",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T16:14:51.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Form3.Designer.vb",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.Designer.vb",
-              "RelativeDocumentMoniker": "FYP\\Form3.Designer.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.Designer.vb",
-              "RelativeToolTip": "FYP\\Form3.Designer.vb",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAgwB4AAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T16:14:46.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
-              "RelativeDocumentMoniker": "FYP\\Form1.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb [Design]",
-              "RelativeToolTip": "FYP\\Form1.vb [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T16:14:22.397Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Form3.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb",
-              "RelativeDocumentMoniker": "FYP\\Form3.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form3.vb [Design]",
-              "RelativeToolTip": "FYP\\Form3.vb [Design]",
+              "Title": "Loginform.vb",
+              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
+              "RelativeDocumentMoniker": "FYP\\Loginform.vb",
+              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
+              "RelativeToolTip": "FYP\\Loginform.vb",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T16:14:20.385Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-09T16:31:40.229Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Form1.vb",
-              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
-              "RelativeDocumentMoniker": "FYP\\Form1.vb",
-              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Form1.vb",
-              "RelativeToolTip": "FYP\\Form1.vb",
-              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAcAAAARAAAA",
+              "Title": "Loginform.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
+              "RelativeDocumentMoniker": "FYP\\Loginform.vb",
+              "ToolTip": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb [Design]",
+              "RelativeToolTip": "FYP\\Loginform.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-09T15:55:45.437Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-09T16:14:22.397Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
