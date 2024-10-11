@@ -23,22 +23,33 @@ Partial Class UserManagement
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(0, 0)
+        Me.Label1.Location = New System.Drawing.Point(77, 41)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(57, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Label1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(77, 101)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(57, 20)
+        Me.Label2.TabIndex = 1
+        Me.Label2.Text = "Label2"
         '
         'UserManagement
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "UserManagement"
         Me.Text = "UserManagement"
@@ -48,4 +59,5 @@ Partial Class UserManagement
     End Sub
 
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class
