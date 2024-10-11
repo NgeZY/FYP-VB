@@ -12,3 +12,4 @@ obj/
 *.cab
 *.msi
 
+/FYP/.vs
