@@ -3,8 +3,13 @@
   "WorkspaceRootPath": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\usermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\usermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\dania\\source\\repos\\fyp-vb\\fyp\\fyp\\studentmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\studentmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+>>>>>>> Stashed changes
     },
     {
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\subjectinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -31,8 +36,17 @@
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\zheyu\\source\\repos\\fyp-vb\\fyp\\fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\dania\\source\\repos\\fyp-vb\\fyp\\fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\dania\\source\\repos\\fyp-vb\\fyp\\fyp\\usermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\usermanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -119,6 +133,30 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "StudentManagement.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\StudentManagement.vb",
+              "RelativeDocumentMoniker": "FYP\\StudentManagement.vb",
+              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\StudentManagement.vb [Design]",
+              "RelativeToolTip": "FYP\\StudentManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-12T04:55:24.358Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClassManagement.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb",
+              "RelativeDocumentMoniker": "FYP\\ClassManagement.vb",
+              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb [Design]",
+              "RelativeToolTip": "FYP\\ClassManagement.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-12T04:36:00.717Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "UserManagement.vb [Design]",
               "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\UserManagement.vb",
               "RelativeDocumentMoniker": "FYP\\UserManagement.vb",
