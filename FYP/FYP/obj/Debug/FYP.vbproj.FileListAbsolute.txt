@@ -35,3 +35,8 @@ C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.vbproj.CoreCompileInput
 C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.exe
 C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.xml
 C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.pdb
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\bin\Debug\MySql.Data.dll
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.Registrationform.resources
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.StudentManagement.resources
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.UserManagement.resources
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.vbproj.Up2Date
