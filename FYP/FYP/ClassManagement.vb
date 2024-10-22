@@ -2,8 +2,8 @@
 
 Public Class ClassManagementForm
     ' Set your connection string (replace with your own)
-    Private connectionString As String = "your_connection_string_here"
-    Private connection As New SqlConnection(connectionString)
+    Private connectionString As String = "Server=localhost;Database=school_management;Uid=root;Pwd=your_password;"
+    Private connection As New MySqlConnection(connectionString)
 
     ' Load class data into DataGridView on form load
     Private Sub DataGridViewClasses_Load(sender As Object, e As EventArgs) Handles MyBase.Load
