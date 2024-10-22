@@ -157,6 +157,9 @@
     <EmbeddedResource Include="StudentManagement.resx">
       <DependentUpon>StudentManagement.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInfo.resx">
+      <DependentUpon>TeacherInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserManagement.resx">
       <DependentUpon>UserManagement.vb</DependentUpon>
     </EmbeddedResource>
