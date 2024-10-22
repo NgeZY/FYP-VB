@@ -25,8 +25,7 @@ Partial Class ClassManagementForm
         Me.DataGridViewClasses = New System.Windows.Forms.DataGridView()
         Me.IDColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NameColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBoxClassID = New System.Windows.Forms.TextBox()
         Me.ClassIDLabel = New System.Windows.Forms.Label()
         Me.ClassNameLabel = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -36,6 +35,7 @@ Partial Class ClassManagementForm
         Me.DeleteClassButton = New System.Windows.Forms.Button()
         Me.UpdateClassButton = New System.Windows.Forms.Button()
         Me.AddClassButton = New System.Windows.Forms.Button()
+        Me.TextBoxClassName = New System.Windows.Forms.TextBox()
         CType(Me.DataGridViewClasses, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -64,19 +64,12 @@ Partial Class ClassManagementForm
         Me.NameColumn.Name = "NameColumn"
         Me.NameColumn.Width = 150
         '
-        'TextBox1
+        'TextBoxClassID
         '
-        Me.TextBox1.Location = New System.Drawing.Point(303, 433)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(412, 26)
-        Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(303, 496)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(412, 26)
-        Me.TextBox2.TabIndex = 2
+        Me.TextBoxClassID.Location = New System.Drawing.Point(303, 433)
+        Me.TextBoxClassID.Name = "TextBoxClassID"
+        Me.TextBoxClassID.Size = New System.Drawing.Size(412, 26)
+        Me.TextBoxClassID.TabIndex = 1
         '
         'ClassIDLabel
         '
@@ -157,6 +150,13 @@ Partial Class ClassManagementForm
         Me.AddClassButton.Text = "Add Class"
         Me.AddClassButton.UseVisualStyleBackColor = True
         '
+        'TextBoxClassName
+        '
+        Me.TextBoxClassName.Location = New System.Drawing.Point(303, 496)
+        Me.TextBoxClassName.Name = "TextBoxClassName"
+        Me.TextBoxClassName.Size = New System.Drawing.Size(412, 26)
+        Me.TextBoxClassName.TabIndex = 2
+        '
         'ClassManagementForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -171,8 +171,8 @@ Partial Class ClassManagementForm
         Me.Controls.Add(Me.AddClassButton)
         Me.Controls.Add(Me.ClassNameLabel)
         Me.Controls.Add(Me.ClassIDLabel)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.TextBoxClassName)
+        Me.Controls.Add(Me.TextBoxClassID)
         Me.Controls.Add(Me.DataGridViewClasses)
         Me.Name = "ClassManagementForm"
         Me.Text = "ClassManagement"
@@ -185,8 +185,7 @@ Partial Class ClassManagementForm
     Friend WithEvents DataGridViewClasses As DataGridView
     Friend WithEvents IDColumn As DataGridViewTextBoxColumn
     Friend WithEvents NameColumn As DataGridViewTextBoxColumn
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents TextBoxClassID As TextBox
     Friend WithEvents ClassIDLabel As Label
     Friend WithEvents ClassNameLabel As Label
     Friend WithEvents Label6 As Label
@@ -196,4 +195,9 @@ Partial Class ClassManagementForm
     Friend WithEvents DeleteClassButton As Button
     Friend WithEvents UpdateClassButton As Button
     Friend WithEvents AddClassButton As Button
+    Friend WithEvents TextBoxClassName As TextBox
+
+    Private Sub ClassManagementForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

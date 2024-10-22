@@ -76,9 +76,7 @@
     <Compile Include="ClassManagement.Designer.vb">
       <DependentUpon>ClassManagement.vb</DependentUpon>
     </Compile>
-    <Compile Include="ClassManagement.vb">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="ClassManagement.vb" />
     <Compile Include="Loginform.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +137,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ClassManagement.resx">
+      <DependentUpon>ClassManagement.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loginform.resx">
       <DependentUpon>Loginform.vb</DependentUpon>
     </EmbeddedResource>
