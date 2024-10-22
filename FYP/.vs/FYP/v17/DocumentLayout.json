@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\",
+  "WorkspaceRootPath": "C:\\Users\\hp\\Documents\\VB\\FYP-VB\\FYP\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
@@ -41,6 +42,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\loginform.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+=======
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\hp\\Documents\\VB\\FYP-VB\\FYP\\fyp\\teacherinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\teacherinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\hp\\documents\\vb\\fyp-vb\\fyp\\fyp\\teacherinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\teacherinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +59,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< Updated upstream
               "Title": "ClassManagement.vb",
               "DocumentMoniker": "C:\\Users\\zheyu\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb",
               "RelativeDocumentMoniker": "FYP\\ClassManagement.vb",
@@ -167,6 +189,29 @@
               "RelativeToolTip": "FYP\\Loginform.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003525|",
               "WhenOpened": "2024-10-09T16:14:22.397Z"
+=======
+              "Title": "TeacherInfo.vb",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\VB\\FYP-VB\\FYP\\FYP\\TeacherInfo.vb",
+              "RelativeDocumentMoniker": "FYP\\TeacherInfo.vb",
+              "ToolTip": "C:\\Users\\hp\\Documents\\VB\\FYP-VB\\FYP\\FYP\\TeacherInfo.vb",
+              "RelativeToolTip": "FYP\\TeacherInfo.vb",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-22T01:12:16.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TeacherInfo.vb [Design]",
+              "DocumentMoniker": "C:\\Users\\hp\\Documents\\VB\\FYP-VB\\FYP\\FYP\\TeacherInfo.vb",
+              "RelativeDocumentMoniker": "FYP\\TeacherInfo.vb",
+              "ToolTip": "C:\\Users\\hp\\Documents\\VB\\FYP-VB\\FYP\\FYP\\TeacherInfo.vb [Design]",
+              "RelativeToolTip": "FYP\\TeacherInfo.vb [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2024-10-22T01:05:37.874Z",
+              "EditorCaption": " [Design]"
+>>>>>>> Stashed changes
             }
           ]
         }
