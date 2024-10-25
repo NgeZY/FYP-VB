@@ -58,3 +58,4 @@ C:\Users\hp\Documents\VB\FYP-VB\FYP\FYP\obj\Debug\FYP.exe
 C:\Users\hp\Documents\VB\FYP-VB\FYP\FYP\obj\Debug\FYP.xml
 C:\Users\hp\Documents\VB\FYP-VB\FYP\FYP\obj\Debug\FYP.pdb
 >>>>>>> b7240bb2268fa3ce0a27afb2381433437496701a
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.TeacherInfo.resources
