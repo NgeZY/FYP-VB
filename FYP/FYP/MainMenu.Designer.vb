@@ -32,69 +32,76 @@ Partial Class MainMenu
         '
         'btnUser
         '
-        Me.btnUser.Location = New System.Drawing.Point(59, 361)
+        Me.btnUser.Location = New System.Drawing.Point(88, 555)
+        Me.btnUser.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnUser.Name = "btnUser"
-        Me.btnUser.Size = New System.Drawing.Size(129, 48)
+        Me.btnUser.Size = New System.Drawing.Size(194, 74)
         Me.btnUser.TabIndex = 5
         Me.btnUser.Text = "Manage User"
         Me.btnUser.UseVisualStyleBackColor = True
         '
         'btnRegister
         '
-        Me.btnRegister.Location = New System.Drawing.Point(59, 79)
+        Me.btnRegister.Location = New System.Drawing.Point(88, 122)
+        Me.btnRegister.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnRegister.Name = "btnRegister"
-        Me.btnRegister.Size = New System.Drawing.Size(129, 48)
+        Me.btnRegister.Size = New System.Drawing.Size(194, 74)
         Me.btnRegister.TabIndex = 6
         Me.btnRegister.Text = "Manage Register"
         Me.btnRegister.UseVisualStyleBackColor = True
         '
         'btnClass
         '
-        Me.btnClass.Location = New System.Drawing.Point(59, 12)
+        Me.btnClass.Location = New System.Drawing.Point(88, 18)
+        Me.btnClass.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnClass.Name = "btnClass"
-        Me.btnClass.Size = New System.Drawing.Size(129, 48)
+        Me.btnClass.Size = New System.Drawing.Size(194, 74)
         Me.btnClass.TabIndex = 7
         Me.btnClass.Text = "Manage Class"
         Me.btnClass.UseVisualStyleBackColor = True
         '
         'btnStudent
         '
-        Me.btnStudent.Location = New System.Drawing.Point(59, 150)
+        Me.btnStudent.Location = New System.Drawing.Point(88, 231)
+        Me.btnStudent.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnStudent.Name = "btnStudent"
-        Me.btnStudent.Size = New System.Drawing.Size(129, 48)
+        Me.btnStudent.Size = New System.Drawing.Size(194, 74)
         Me.btnStudent.TabIndex = 8
         Me.btnStudent.Text = "Manage Student"
         Me.btnStudent.UseVisualStyleBackColor = True
         '
         'btnTeacher
         '
-        Me.btnTeacher.Location = New System.Drawing.Point(59, 217)
+        Me.btnTeacher.Location = New System.Drawing.Point(88, 334)
+        Me.btnTeacher.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnTeacher.Name = "btnTeacher"
-        Me.btnTeacher.Size = New System.Drawing.Size(129, 48)
+        Me.btnTeacher.Size = New System.Drawing.Size(194, 74)
         Me.btnTeacher.TabIndex = 9
         Me.btnTeacher.Text = "Manage Teacher"
         Me.btnTeacher.UseVisualStyleBackColor = True
         '
         'btnSubject
         '
-        Me.btnSubject.Location = New System.Drawing.Point(59, 285)
+        Me.btnSubject.Location = New System.Drawing.Point(88, 438)
+        Me.btnSubject.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.btnSubject.Name = "btnSubject"
-        Me.btnSubject.Size = New System.Drawing.Size(129, 48)
+        Me.btnSubject.Size = New System.Drawing.Size(194, 74)
         Me.btnSubject.TabIndex = 10
         Me.btnSubject.Text = "Manage Subject"
         Me.btnSubject.UseVisualStyleBackColor = True
         '
         'MainMenu
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1200, 692)
         Me.Controls.Add(Me.btnSubject)
         Me.Controls.Add(Me.btnTeacher)
         Me.Controls.Add(Me.btnStudent)
         Me.Controls.Add(Me.btnClass)
         Me.Controls.Add(Me.btnRegister)
         Me.Controls.Add(Me.btnUser)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "MainMenu"
         Me.Text = "MainMenu"
         Me.ResumeLayout(False)

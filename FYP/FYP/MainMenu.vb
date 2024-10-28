@@ -34,4 +34,8 @@
         Dim userForm As New UserManagement()
         userForm.Show()
     End Sub
+
+    Private Sub MainMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
