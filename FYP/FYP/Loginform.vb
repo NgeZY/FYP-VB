@@ -1,17 +1,18 @@
 ﻿Public Class Loginform
-    Dim correctUsername As String = "user123"
-    Dim correctPassword As String = "pass123"
+    Private Const validUsername As String = "admin"
+    Private Const validPassword As String = "password123"
+
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        ' Fetch input from textboxes
-        Dim username As String = txtUsername.Text
-        Dim password As String = txtPassword.Text
-
-        ' Check if the username and password are correct
-        If username = correctUsername And password = correctPassword Then
-            MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        If txtUsername.Text = validUsername And txtPassword.Text = validPassword Then
+            ' Hide the login form and open the main menu
+            Me.Hide()
+            Dim mainMenu As New MainMenu()
+            mainMenu.Show()
         Else
-            MessageBox.Show("Invalid username or password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ' Display an error message if the login fails
+            lblMessage.Text = "Invalid Username or Password"
+            lblMessage.ForeColor = Color.Red
         End If
     End Sub
 End Class

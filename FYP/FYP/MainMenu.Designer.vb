@@ -22,77 +22,88 @@ Partial Class MainMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
+        Me.btnUser = New System.Windows.Forms.Button()
+        Me.btnRegister = New System.Windows.Forms.Button()
+        Me.btnClass = New System.Windows.Forms.Button()
+        Me.btnStudent = New System.Windows.Forms.Button()
+        Me.btnTeacher = New System.Windows.Forms.Button()
+        Me.btnSubject = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnUser
         '
-        Me.Button1.Location = New System.Drawing.Point(309, 104)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnUser.Location = New System.Drawing.Point(59, 361)
+        Me.btnUser.Name = "btnUser"
+        Me.btnUser.Size = New System.Drawing.Size(129, 48)
+        Me.btnUser.TabIndex = 5
+        Me.btnUser.Text = "Manage User"
+        Me.btnUser.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnRegister
         '
-        Me.Button2.Location = New System.Drawing.Point(363, 214)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Button2"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnRegister.Location = New System.Drawing.Point(59, 79)
+        Me.btnRegister.Name = "btnRegister"
+        Me.btnRegister.Size = New System.Drawing.Size(129, 48)
+        Me.btnRegister.TabIndex = 6
+        Me.btnRegister.Text = "Manage Register"
+        Me.btnRegister.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnClass
         '
-        Me.Button3.Location = New System.Drawing.Point(464, 251)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 2
-        Me.Button3.Text = "Button3"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnClass.Location = New System.Drawing.Point(59, 12)
+        Me.btnClass.Name = "btnClass"
+        Me.btnClass.Size = New System.Drawing.Size(129, 48)
+        Me.btnClass.TabIndex = 7
+        Me.btnClass.Text = "Manage Class"
+        Me.btnClass.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnStudent
         '
-        Me.Button4.Location = New System.Drawing.Point(396, 280)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 3
-        Me.Button4.Text = "Button4"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnStudent.Location = New System.Drawing.Point(59, 150)
+        Me.btnStudent.Name = "btnStudent"
+        Me.btnStudent.Size = New System.Drawing.Size(129, 48)
+        Me.btnStudent.TabIndex = 8
+        Me.btnStudent.Text = "Manage Student"
+        Me.btnStudent.UseVisualStyleBackColor = True
         '
-        'Button5
+        'btnTeacher
         '
-        Me.Button5.Location = New System.Drawing.Point(506, 310)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(75, 23)
-        Me.Button5.TabIndex = 4
-        Me.Button5.Text = "Button5"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.btnTeacher.Location = New System.Drawing.Point(59, 217)
+        Me.btnTeacher.Name = "btnTeacher"
+        Me.btnTeacher.Size = New System.Drawing.Size(129, 48)
+        Me.btnTeacher.TabIndex = 9
+        Me.btnTeacher.Text = "Manage Teacher"
+        Me.btnTeacher.UseVisualStyleBackColor = True
+        '
+        'btnSubject
+        '
+        Me.btnSubject.Location = New System.Drawing.Point(59, 285)
+        Me.btnSubject.Name = "btnSubject"
+        Me.btnSubject.Size = New System.Drawing.Size(129, 48)
+        Me.btnSubject.TabIndex = 10
+        Me.btnSubject.Text = "Manage Subject"
+        Me.btnSubject.UseVisualStyleBackColor = True
         '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button5)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnSubject)
+        Me.Controls.Add(Me.btnTeacher)
+        Me.Controls.Add(Me.btnStudent)
+        Me.Controls.Add(Me.btnClass)
+        Me.Controls.Add(Me.btnRegister)
+        Me.Controls.Add(Me.btnUser)
         Me.Name = "MainMenu"
         Me.Text = "MainMenu"
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
+    Friend WithEvents btnUser As Button
+    Friend WithEvents btnClass As Button
+    Friend WithEvents btnStudent As Button
+    Friend WithEvents btnTeacher As Button
+    Friend WithEvents btnSubject As Button
+    Friend WithEvents btnRegister As Button
 End Class
