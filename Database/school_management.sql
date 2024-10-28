@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 12, 2024 at 05:25 PM
+-- Generation Time: Oct 28, 2024 at 02:16 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -24,16 +24,47 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `classes`
+--
+
+CREATE TABLE `classes` (
+  `ClassID` varchar(10) NOT NULL,
+  `ClassName` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `students`
 --
 
 CREATE TABLE `students` (
-  `StudentID` varchar(10) NOT NULL,
-  `Name` varchar(100) NOT NULL,
-  `ICNumber` varchar(20) NOT NULL,
-  `Age` int(11) DEFAULT NULL,
-  `Class` varchar(20) DEFAULT NULL
+  `StudentID` int(11) NOT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  `IC` varchar(255) DEFAULT NULL,
+  `Age` int(11) DEFAULT 0,
+  `Class` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `subject_registered`
+--
+
+CREATE TABLE `subject_registered` (
+  `StudentID` int(11) DEFAULT NULL,
+  `Subject_code` varchar(255) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `subject_registered`
+--
+
+INSERT INTO `subject_registered` (`StudentID`, `Subject_code`) VALUES
+(2, '38'),
+(3, '36'),
+(2, '36');
 
 -- --------------------------------------------------------
 
@@ -43,18 +74,23 @@ CREATE TABLE `students` (
 
 CREATE TABLE `teachers` (
   `TeacherID` int(11) NOT NULL,
-  `FirstName` varchar(50) NOT NULL,
-  `LastName` varchar(50) NOT NULL,
-  `IC` varchar(50) NOT NULL,
-  `PhoneNumber` varchar(15) DEFAULT NULL,
+  `Name` varchar(255) DEFAULT NULL,
+  `IC` varchar(255) DEFAULT NULL,
+  `PhoneNumber` varchar(255) DEFAULT NULL,
   `Address` varchar(255) DEFAULT NULL,
-  `Subject` varchar(100) DEFAULT NULL,
-  `Salary` decimal(10,2) DEFAULT NULL
+  `Subject` varchar(255) DEFAULT NULL,
+  `Salary` int(11) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `classes`
+--
+ALTER TABLE `classes`
+  ADD PRIMARY KEY (`ClassID`);
 
 --
 -- Indexes for table `students`
@@ -71,6 +107,12 @@ ALTER TABLE `teachers`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `students`
+--
+ALTER TABLE `students`
+  MODIFY `StudentID` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `teachers`
