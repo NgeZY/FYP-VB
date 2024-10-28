@@ -207,6 +207,9 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Registrationform.resx">
+      <DependentUpon>Registrationform.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StudentManagement.resx">
       <DependentUpon>StudentManagement.vb</DependentUpon>
     </EmbeddedResource>

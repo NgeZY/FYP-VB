@@ -1,4 +1,5 @@
 ﻿Imports System.Data.SqlClient
+Imports MySql.Data.MySqlClient
 
 Public Class ClassManagementForm
     ' Set your connection string (replace with your own)
@@ -14,7 +15,7 @@ Public Class ClassManagementForm
     Private Sub LoadClasses()
         Try
             Dim query As String = "SELECT * FROM Classes"
-            Dim adapter As New SqlDataAdapter(query, connection)
+            Dim adapter As New MySqlDataAdapter(query, connection)
             Dim table As New DataTable()
             adapter.Fill(table)
             DataGridViewClasses.DataSource = table
@@ -27,7 +28,7 @@ Public Class ClassManagementForm
     Private Sub AddClassButton_Click(sender As Object, e As EventArgs) Handles AddClassButton.Click
         Try
             Dim query As String = "INSERT INTO Classes (ClassID, ClassName) VALUES (@ClassID, @ClassName)"
-            Dim command As New SqlCommand(query, connection)
+            Dim command As New MySqlCommand(query, connection)
             command.Parameters.AddWithValue("@ClassID", TextBoxClassID.Text)
             command.Parameters.AddWithValue("@ClassName", TextBoxClassName.Text)
 
@@ -48,7 +49,7 @@ Public Class ClassManagementForm
     Private Sub UpdateClassButton_Click(sender As Object, e As EventArgs) Handles UpdateClassButton.Click
         Try
             Dim query As String = "UPDATE Classes SET ClassName = @ClassName WHERE ClassID = @ClassID"
-            Dim command As New SqlCommand(query, connection)
+            Dim command As New MySqlCommand(query, connection)
             command.Parameters.AddWithValue("@ClassID", TextBoxClassID.Text)
             command.Parameters.AddWithValue("@ClassName", TextBoxClassName.Text)
 
@@ -69,7 +70,7 @@ Public Class ClassManagementForm
     Private Sub DeleteClassButton_Click(sender As Object, e As EventArgs) Handles DeleteClassButton.Click
         Try
             Dim query As String = "DELETE FROM Classes WHERE ClassID = @ClassID"
-            Dim command As New SqlCommand(query, connection)
+            Dim command As New MySqlCommand(query, connection)
             command.Parameters.AddWithValue("@ClassID", TextBoxClassID.Text)
 
             connection.Open()
@@ -97,7 +98,7 @@ Public Class ClassManagementForm
             Exit Sub
         End If
 
-        Dim adapter As New SqlDataAdapter(query, connection)
+        Dim adapter As New MySqlDataAdapter(query, connection)
         If Not String.IsNullOrEmpty(TextBoxClassID.Text) Then
             adapter.SelectCommand.Parameters.AddWithValue("@ClassID", TextBoxClassID.Text)
         Else

@@ -109,4 +109,8 @@ Public Class StudentManagement
     Private Sub ClassDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles StudentDataGridView.CellContentClick
 
     End Sub
+
+    Private Sub StudentTextBox_TextChanged(sender As Object, e As EventArgs) Handles StudentTextBox.TextChanged
+
+    End Sub
 End Class
