@@ -28,6 +28,7 @@ Partial Class Loginform
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.lblMessage = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -65,7 +66,7 @@ Partial Class Loginform
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(314, 216)
+        Me.Button1.Location = New System.Drawing.Point(318, 200)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 4
@@ -75,17 +76,26 @@ Partial Class Loginform
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(269, 258)
+        Me.Label3.Location = New System.Drawing.Point(259, 242)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(192, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Don't have an account yet? Click here!"
+        '
+        'lblMessage
+        '
+        Me.lblMessage.AutoSize = True
+        Me.lblMessage.Location = New System.Drawing.Point(348, 272)
+        Me.lblMessage.Name = "lblMessage"
+        Me.lblMessage.Size = New System.Drawing.Size(0, 13)
+        Me.lblMessage.TabIndex = 6
         '
         'Loginform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.lblMessage)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.txtPassword)
@@ -105,4 +115,5 @@ Partial Class Loginform
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label3 As Label
+    Friend WithEvents lblMessage As Label
 End Class
