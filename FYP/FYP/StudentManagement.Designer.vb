@@ -22,7 +22,7 @@ Partial Class StudentManagement
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ClassDataGridView = New System.Windows.Forms.DataGridView()
+        Me.StudentDataGridView = New System.Windows.Forms.DataGridView()
         Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -33,10 +33,10 @@ Partial Class StudentManagement
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.StudentTextBox = New System.Windows.Forms.TextBox()
+        Me.NameTextBox = New System.Windows.Forms.TextBox()
+        Me.ICTextBox = New System.Windows.Forms.TextBox()
+        Me.AgeTextBox = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.AddButton = New System.Windows.Forms.Button()
         Me.UpdateButton = New System.Windows.Forms.Button()
@@ -46,19 +46,19 @@ Partial Class StudentManagement
         Me.SearchButton2 = New System.Windows.Forms.Button()
         Me.StatusBox = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        CType(Me.ClassDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.StudentDataGridView, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'ClassDataGridView
+        'StudentDataGridView
         '
-        Me.ClassDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.ClassDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
-        Me.ClassDataGridView.Location = New System.Drawing.Point(142, 50)
-        Me.ClassDataGridView.Name = "ClassDataGridView"
-        Me.ClassDataGridView.RowHeadersWidth = 62
-        Me.ClassDataGridView.RowTemplate.Height = 28
-        Me.ClassDataGridView.Size = New System.Drawing.Size(887, 194)
-        Me.ClassDataGridView.TabIndex = 0
+        Me.StudentDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.StudentDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5})
+        Me.StudentDataGridView.Location = New System.Drawing.Point(142, 50)
+        Me.StudentDataGridView.Name = "StudentDataGridView"
+        Me.StudentDataGridView.RowHeadersWidth = 62
+        Me.StudentDataGridView.RowTemplate.Height = 28
+        Me.StudentDataGridView.Size = New System.Drawing.Size(887, 194)
+        Me.StudentDataGridView.TabIndex = 0
         '
         'Column1
         '
@@ -140,33 +140,33 @@ Partial Class StudentManagement
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Class:"
         '
-        'TextBox1
+        'StudentTextBox
         '
-        Me.TextBox1.Location = New System.Drawing.Point(280, 267)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(307, 26)
-        Me.TextBox1.TabIndex = 6
+        Me.StudentTextBox.Location = New System.Drawing.Point(280, 267)
+        Me.StudentTextBox.Name = "StudentTextBox"
+        Me.StudentTextBox.Size = New System.Drawing.Size(307, 26)
+        Me.StudentTextBox.TabIndex = 6
         '
-        'TextBox2
+        'NameTextBox
         '
-        Me.TextBox2.Location = New System.Drawing.Point(280, 321)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(307, 26)
-        Me.TextBox2.TabIndex = 7
+        Me.NameTextBox.Location = New System.Drawing.Point(280, 321)
+        Me.NameTextBox.Name = "NameTextBox"
+        Me.NameTextBox.Size = New System.Drawing.Size(307, 26)
+        Me.NameTextBox.TabIndex = 7
         '
-        'TextBox3
+        'ICTextBox
         '
-        Me.TextBox3.Location = New System.Drawing.Point(280, 373)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(307, 26)
-        Me.TextBox3.TabIndex = 8
+        Me.ICTextBox.Location = New System.Drawing.Point(280, 373)
+        Me.ICTextBox.Name = "ICTextBox"
+        Me.ICTextBox.Size = New System.Drawing.Size(307, 26)
+        Me.ICTextBox.TabIndex = 8
         '
-        'TextBox4
+        'AgeTextBox
         '
-        Me.TextBox4.Location = New System.Drawing.Point(280, 427)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(307, 26)
-        Me.TextBox4.TabIndex = 9
+        Me.AgeTextBox.Location = New System.Drawing.Point(280, 427)
+        Me.AgeTextBox.Name = "AgeTextBox"
+        Me.AgeTextBox.Size = New System.Drawing.Size(307, 26)
+        Me.AgeTextBox.TabIndex = 9
         '
         'ComboBox1
         '
@@ -260,25 +260,25 @@ Partial Class StudentManagement
         Me.Controls.Add(Me.UpdateButton)
         Me.Controls.Add(Me.AddButton)
         Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.AgeTextBox)
+        Me.Controls.Add(Me.ICTextBox)
+        Me.Controls.Add(Me.NameTextBox)
+        Me.Controls.Add(Me.StudentTextBox)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.ClassDataGridView)
+        Me.Controls.Add(Me.StudentDataGridView)
         Me.Name = "StudentManagement"
         Me.Text = "StudentManagement"
-        CType(Me.ClassDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.StudentDataGridView, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents ClassDataGridView As DataGridView
+    Friend WithEvents StudentDataGridView As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewTextBoxColumn
@@ -289,10 +289,10 @@ Partial Class StudentManagement
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents StudentTextBox As TextBox
+    Friend WithEvents NameTextBox As TextBox
+    Friend WithEvents ICTextBox As TextBox
+    Friend WithEvents AgeTextBox As TextBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents AddButton As Button
     Friend WithEvents UpdateButton As Button

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\dania\\source\\repos\\fyp-vb\\fyp\\fyp\\classmanagement.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\dania\\source\\repos\\fyp-vb\\fyp\\fyp\\mainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\mainmenu.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
@@ -23,16 +31,8 @@
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\subjectinfo.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|c:\\users\\dania\\source\\repos\\fyp-vb\\fyp\\fyp\\classmanagement.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.designer.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|solutionrelative:fyp\\classmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D744A919-7383-4B42-B9C1-FB693012B4A2}|FYP\\FYP.vbproj|C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\fyp\\studentmanagement.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
@@ -50,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,12 +58,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MainMenu.vb",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\MainMenu.vb",
               "RelativeDocumentMoniker": "FYP\\MainMenu.vb",
-              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\MainMenu.vb*",
-              "RelativeToolTip": "FYP\\MainMenu.vb*",
+              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\MainMenu.vb",
+              "RelativeToolTip": "FYP\\MainMenu.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-28T04:29:15.429Z",
@@ -71,7 +71,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "ClassManagement.Designer.vb",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.Designer.vb",
               "RelativeDocumentMoniker": "FYP\\ClassManagement.Designer.vb",
@@ -84,26 +84,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "ClassManagement.vb",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb",
               "RelativeDocumentMoniker": "FYP\\ClassManagement.vb",
-              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb*",
-              "RelativeToolTip": "FYP\\ClassManagement.vb*",
+              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb",
+              "RelativeToolTip": "FYP\\ClassManagement.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-17T02:44:05.378Z"
+              "WhenOpened": "2024-10-17T02:44:05.378Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ClassManagement.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb",
               "RelativeDocumentMoniker": "FYP\\ClassManagement.vb",
-              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb [Design]*",
-              "RelativeToolTip": "FYP\\ClassManagement.vb [Design]*",
+              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\ClassManagement.vb [Design]",
+              "RelativeToolTip": "FYP\\ClassManagement.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-10-17T02:39:22.455Z"
+              "WhenOpened": "2024-10-17T02:39:22.455Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -118,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Registrationform.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\Registrationform.vb",
               "RelativeDocumentMoniker": "FYP\\Registrationform.vb",
@@ -130,12 +132,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainMenu.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\MainMenu.vb",
               "RelativeDocumentMoniker": "FYP\\MainMenu.vb",
-              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\MainMenu.vb [Design]*",
-              "RelativeToolTip": "FYP\\MainMenu.vb [Design]*",
+              "ToolTip": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\MainMenu.vb [Design]",
+              "RelativeToolTip": "FYP\\MainMenu.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-17T02:39:22.454Z",
               "EditorCaption": " [Design]"
@@ -153,7 +155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SubjectInfo.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\SubjectInfo.vb",
               "RelativeDocumentMoniker": "FYP\\SubjectInfo.vb",
@@ -165,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Loginform.vb [Design]",
               "DocumentMoniker": "C:\\Users\\Dania\\source\\repos\\FYP-VB\\FYP\\FYP\\Loginform.vb",
               "RelativeDocumentMoniker": "FYP\\Loginform.vb",
