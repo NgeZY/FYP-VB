@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 28, 2024 at 02:16 PM
+-- Generation Time: Oct 30, 2024 at 11:21 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -49,6 +49,27 @@ CREATE TABLE `students` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `subject`
+--
+
+CREATE TABLE `subject` (
+  `Subject_code` varchar(255) DEFAULT NULL,
+  `Subject_name` varchar(255) DEFAULT NULL,
+  `Credit` int(11) DEFAULT NULL,
+  `Fee` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `subject`
+--
+
+INSERT INTO `subject` (`Subject_code`, `Subject_name`, `Credit`, `Fee`) VALUES
+('DDWD 2553', 'ABC', 3, 3000),
+('DDWD 3773', 'DE', 3, 2000);
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `subject_registered`
 --
 
@@ -64,7 +85,10 @@ CREATE TABLE `subject_registered` (
 INSERT INTO `subject_registered` (`StudentID`, `Subject_code`) VALUES
 (2, '38'),
 (3, '36'),
-(2, '36');
+(2, '36'),
+(3, 'DDWD 2553'),
+(4, 'DDWD 2553'),
+(4, 'DDWD 3773');
 
 -- --------------------------------------------------------
 
