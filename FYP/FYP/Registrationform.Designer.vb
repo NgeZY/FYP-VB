@@ -73,7 +73,7 @@ Partial Class Registrationform
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(180, 66)
+        Me.DataGridView1.Location = New System.Drawing.Point(185, 71)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(445, 150)
         Me.DataGridView1.TabIndex = 4
@@ -81,7 +81,7 @@ Partial Class Registrationform
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(355, 32)
+        Me.Label3.Location = New System.Drawing.Point(360, 37)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(97, 13)
         Me.Label3.TabIndex = 5
@@ -136,7 +136,7 @@ Partial Class Registrationform
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(345, 32)
+        Me.Label4.Location = New System.Drawing.Point(350, 37)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 13)
         Me.Label4.TabIndex = 11

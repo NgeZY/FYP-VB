@@ -1,5 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports Mysqlx.XDevAPI.Common
 Public Class Registrationform
+    Dim connectionString As String = "server=localhost; user=root; password=; database = school_management"
 
     Private Sub ButtonRegister_Click(sender As Object, e As EventArgs) Handles ButtonRegister.Click
         If Not DataGridView1.Columns.Contains("StudentID") Then
@@ -10,7 +12,6 @@ Public Class Registrationform
         Dim id As Integer = TextBoxID.Text
         Dim code As String = TextBoxCode.Text
         Dim subject_registered As Boolean = False
-        Dim connectionString As String = "server=localhost; user=root; password=; database = school_management"
         Using connection As New MySqlConnection(connectionString)
             connection.Open()
             Dim query_check As String = "SELECT COUNT(*) FROM subject_registered WHERE StudentID = @id AND Subject_code = @code"
@@ -60,5 +61,56 @@ Public Class Registrationform
 
     Private Sub ButtonPrint_Click(sender As Object, e As EventArgs) Handles ButtonPrint.Click
 
+    End Sub
+
+    Private Sub ButtonDisplayCredit_Click(sender As Object, e As EventArgs) Handles ButtonDisplayCredit.Click
+
+        Dim id As String = TextBoxID.Text.Trim()
+        If String.IsNullOrEmpty(id) Then
+            MsgBox("Please enter a student ID!")
+            Return
+        End If
+        Dim credit As Integer = 0
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+            Dim query As String = "SELECT SUM(s.Credit) FROM subject s INNER JOIN subject_registered sr ON sr.Subject_code
+                                    = s.Subject_code WHERE sr.StudentID = @studentID"
+            Using command As New MySqlCommand(query, connection)
+                command.Parameters.AddWithValue("@studentID", id)
+                Using reader As MySqlDataReader = command.ExecuteReader
+                    If reader.Read() Then
+                        If Not reader.IsDBNull(0) Then
+                            credit = reader.GetInt32(0)
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
+        MsgBox("The total credit of this student is " + credit.ToString())
+    End Sub
+
+    Private Sub ButtonDisplayFee_Click(sender As Object, e As EventArgs) Handles ButtonDisplayFee.Click
+        Dim id As String = TextBoxID.Text.Trim()
+        If String.IsNullOrEmpty(id) Then
+            MsgBox("Please enter a student ID!")
+            Return
+        End If
+        Dim fee As Integer = 0
+        Using connection As New MySqlConnection(connectionString)
+            connection.Open()
+            Dim query As String = "SELECT SUM(s.Fee) FROM subject s INNER JOIN subject_registered sr ON sr.Subject_code
+                                    = s.Subject_code WHERE sr.StudentID = @studentID"
+            Using command As New MySqlCommand(query, connection)
+                command.Parameters.AddWithValue("@studentID", id)
+                Using reader As MySqlDataReader = command.ExecuteReader
+                    If reader.Read() Then
+                        If Not reader.IsDBNull(0) Then
+                            fee = reader.GetInt32(0)
+                        End If
+                    End If
+                End Using
+            End Using
+        End Using
+        MsgBox("The total fee needed to pay by this student is " + fee.ToString())
     End Sub
 End Class
