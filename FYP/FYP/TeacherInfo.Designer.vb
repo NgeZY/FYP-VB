@@ -38,17 +38,23 @@ Partial Class TeacherInfo
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.btnUpdate = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblPhoneNumber = New System.Windows.Forms.Label()
+        Me.lblAddress = New System.Windows.Forms.Label()
+        Me.lblSalary = New System.Windows.Forms.Label()
+        Me.txtPhoneNumber = New System.Windows.Forms.TextBox()
+        Me.txtAddress = New System.Windows.Forms.TextBox()
+        Me.txtSalary = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(115, 334)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 277)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 62
         Me.DataGridView1.RowTemplate.Height = 28
-        Me.DataGridView1.Size = New System.Drawing.Size(547, 254)
+        Me.DataGridView1.Size = New System.Drawing.Size(650, 255)
         Me.DataGridView1.TabIndex = 2
         '
         'txtBoxIcNumber
@@ -111,7 +117,7 @@ Partial Class TeacherInfo
         'lblName
         '
         Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(725, 334)
+        Me.lblName.Location = New System.Drawing.Point(712, 334)
         Me.lblName.Name = "lblName"
         Me.lblName.Size = New System.Drawing.Size(72, 22)
         Me.lblName.TabIndex = 10
@@ -120,7 +126,7 @@ Partial Class TeacherInfo
         'lblIc
         '
         Me.lblIc.AutoSize = True
-        Me.lblIc.Location = New System.Drawing.Point(725, 388)
+        Me.lblIc.Location = New System.Drawing.Point(715, 388)
         Me.lblIc.Name = "lblIc"
         Me.lblIc.Size = New System.Drawing.Size(105, 22)
         Me.lblIc.TabIndex = 11
@@ -129,7 +135,7 @@ Partial Class TeacherInfo
         'lblSubject
         '
         Me.lblSubject.AutoSize = True
-        Me.lblSubject.Location = New System.Drawing.Point(725, 450)
+        Me.lblSubject.Location = New System.Drawing.Point(713, 447)
         Me.lblSubject.Name = "lblSubject"
         Me.lblSubject.Size = New System.Drawing.Size(80, 22)
         Me.lblSubject.TabIndex = 12
@@ -148,7 +154,7 @@ Partial Class TeacherInfo
         'btnAdd
         '
         Me.btnAdd.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.btnAdd.Location = New System.Drawing.Point(729, 505)
+        Me.btnAdd.Location = New System.Drawing.Point(1138, 447)
         Me.btnAdd.Name = "btnAdd"
         Me.btnAdd.Size = New System.Drawing.Size(91, 31)
         Me.btnAdd.TabIndex = 14
@@ -157,7 +163,7 @@ Partial Class TeacherInfo
         '
         'btnDelete
         '
-        Me.btnDelete.Location = New System.Drawing.Point(1000, 505)
+        Me.btnDelete.Location = New System.Drawing.Point(1134, 563)
         Me.btnDelete.Name = "btnDelete"
         Me.btnDelete.Size = New System.Drawing.Size(91, 31)
         Me.btnDelete.TabIndex = 15
@@ -166,7 +172,7 @@ Partial Class TeacherInfo
         '
         'btnUpdate
         '
-        Me.btnUpdate.Location = New System.Drawing.Point(867, 505)
+        Me.btnUpdate.Location = New System.Drawing.Point(1134, 504)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(95, 31)
         Me.btnUpdate.TabIndex = 16
@@ -177,17 +183,71 @@ Partial Class TeacherInfo
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Modern No. 20", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(108, 268)
+        Me.Label7.Location = New System.Drawing.Point(12, 237)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(236, 37)
         Me.Label7.TabIndex = 17
         Me.Label7.Text = "Teacher's List"
         '
+        'lblPhoneNumber
+        '
+        Me.lblPhoneNumber.AutoSize = True
+        Me.lblPhoneNumber.Location = New System.Drawing.Point(700, 504)
+        Me.lblPhoneNumber.Name = "lblPhoneNumber"
+        Me.lblPhoneNumber.Size = New System.Drawing.Size(140, 22)
+        Me.lblPhoneNumber.TabIndex = 18
+        Me.lblPhoneNumber.Text = "Phone Number :"
+        '
+        'lblAddress
+        '
+        Me.lblAddress.AutoSize = True
+        Me.lblAddress.Location = New System.Drawing.Point(725, 563)
+        Me.lblAddress.Name = "lblAddress"
+        Me.lblAddress.Size = New System.Drawing.Size(86, 22)
+        Me.lblAddress.TabIndex = 19
+        Me.lblAddress.Text = "Address :"
+        '
+        'lblSalary
+        '
+        Me.lblSalary.AutoSize = True
+        Me.lblSalary.Location = New System.Drawing.Point(725, 617)
+        Me.lblSalary.Name = "lblSalary"
+        Me.lblSalary.Size = New System.Drawing.Size(71, 22)
+        Me.lblSalary.TabIndex = 20
+        Me.lblSalary.Text = "Salary :"
+        '
+        'txtPhoneNumber
+        '
+        Me.txtPhoneNumber.Location = New System.Drawing.Point(854, 504)
+        Me.txtPhoneNumber.Name = "txtPhoneNumber"
+        Me.txtPhoneNumber.Size = New System.Drawing.Size(237, 28)
+        Me.txtPhoneNumber.TabIndex = 21
+        '
+        'txtAddress
+        '
+        Me.txtAddress.Location = New System.Drawing.Point(854, 560)
+        Me.txtAddress.Name = "txtAddress"
+        Me.txtAddress.Size = New System.Drawing.Size(237, 28)
+        Me.txtAddress.TabIndex = 22
+        '
+        'txtSalary
+        '
+        Me.txtSalary.Location = New System.Drawing.Point(854, 614)
+        Me.txtSalary.Name = "txtSalary"
+        Me.txtSalary.Size = New System.Drawing.Size(237, 28)
+        Me.txtSalary.TabIndex = 23
+        '
         'TeacherInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1121, 707)
+        Me.ClientSize = New System.Drawing.Size(1252, 699)
+        Me.Controls.Add(Me.txtSalary)
+        Me.Controls.Add(Me.txtAddress)
+        Me.Controls.Add(Me.txtPhoneNumber)
+        Me.Controls.Add(Me.lblSalary)
+        Me.Controls.Add(Me.lblAddress)
+        Me.Controls.Add(Me.lblPhoneNumber)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnDelete)
@@ -228,4 +288,10 @@ Partial Class TeacherInfo
     Friend WithEvents btnDelete As Button
     Friend WithEvents btnUpdate As Button
     Friend WithEvents Label7 As Label
+    Friend WithEvents lblPhoneNumber As Label
+    Friend WithEvents lblAddress As Label
+    Friend WithEvents lblSalary As Label
+    Friend WithEvents txtPhoneNumber As TextBox
+    Friend WithEvents txtAddress As TextBox
+    Friend WithEvents txtSalary As TextBox
 End Class
