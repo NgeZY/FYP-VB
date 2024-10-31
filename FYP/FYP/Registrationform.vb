@@ -1,5 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 Imports Mysqlx.XDevAPI.Common
+Imports System.Net
+Imports System.Net.Mail
 Public Class Registrationform
     Dim connectionString As String = "server=localhost; user=root; password=; database = school_management"
 
@@ -112,5 +114,27 @@ Public Class Registrationform
             End Using
         End Using
         MsgBox("The total fee needed to pay by this student is " + fee.ToString())
+    End Sub
+
+    Private Sub ButtonEmail_Click(sender As Object, e As EventArgs) Handles ButtonEmail.Click
+        Dim email As String = InputBox("Enter student email: ")
+        Dim smtpClient As New SmtpClient("smtp.gmail.com") ' Replace with your SMTP server
+        smtpClient.Port = 587 ' Common port for TLS
+        smtpClient.Credentials = New NetworkCredential("zheyunge0412@gmail.com", "nge041225") ' Replace with your email and password
+        smtpClient.EnableSsl = True ' Enable SSL for secure connection
+
+        Dim mailMessage As New MailMessage()
+        mailMessage.From = New MailAddress("zheyunge0412@gmail.com") ' Replace with your email
+        mailMessage.To.Add(email) ' Replace with recipient's email
+        mailMessage.Subject = "Test Email"
+        mailMessage.Body = "This is a test email sent from VB.NET application."
+        mailMessage.IsBodyHtml = False ' Set to True if the body contains HTML
+
+        Try
+            smtpClient.Send(mailMessage)
+            Console.WriteLine("Email sent successfully!")
+        Catch ex As Exception
+            Console.WriteLine("Error sending email: " & ex.Message)
+        End Try
     End Sub
 End Class
