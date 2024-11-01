@@ -35,6 +35,7 @@ Partial Class Registrationform
         Me.ButtonDisplayFee = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.ButtonDisplaySubject = New System.Windows.Forms.Button()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -73,7 +74,7 @@ Partial Class Registrationform
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(185, 71)
+        Me.DataGridView1.Location = New System.Drawing.Point(47, 71)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(445, 150)
         Me.DataGridView1.TabIndex = 4
@@ -81,12 +82,11 @@ Partial Class Registrationform
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(360, 37)
+        Me.Label3.Location = New System.Drawing.Point(222, 37)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(97, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Registered Subject"
-        Me.Label3.Visible = False
         '
         'ButtonRegister
         '
@@ -136,12 +136,11 @@ Partial Class Registrationform
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(350, 37)
+        Me.Label4.Location = New System.Drawing.Point(622, 37)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(116, 13)
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "Student List by Subject"
-        Me.Label4.Visible = False
         '
         'ButtonDisplaySubject
         '
@@ -152,11 +151,20 @@ Partial Class Registrationform
         Me.ButtonDisplaySubject.Text = "Display by Subject"
         Me.ButtonDisplaySubject.UseVisualStyleBackColor = True
         '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(569, 71)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(250, 160)
+        Me.ListBox1.TabIndex = 13
+        '
         'Registrationform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(854, 501)
+        Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.ButtonDisplaySubject)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.ButtonDisplayFee)
@@ -191,4 +199,5 @@ Partial Class Registrationform
     Friend WithEvents ButtonDisplayFee As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents ButtonDisplaySubject As Button
+    Friend WithEvents ListBox1 As ListBox
 End Class

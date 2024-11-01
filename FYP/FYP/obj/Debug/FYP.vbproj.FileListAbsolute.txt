@@ -162,3 +162,4 @@ C:\Users\hp\Documents\VB\FYP-VB\FYP\FYP\obj\Debug\FYP.Registrationform.resources
 C:\Users\hp\Documents\VB\FYP-VB\FYP\FYP\obj\Debug\FYP.vbproj.Up2Date
 C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\bin\Debug\itextsharp.dll
 C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\bin\Debug\itextsharp.xml
+C:\Users\zheyu\source\repos\FYP-VB\FYP\FYP\obj\Debug\FYP.AddUser.resources

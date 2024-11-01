@@ -13,109 +13,197 @@ Public Class Registrationform
             DataGridView1.Columns.Add("StudentID", "Student ID")
             DataGridView1.Columns.Add("subject_code", "Subject Code")
         End If
-        Label3.Visible = True
-        Dim id As Integer = TextBoxID.Text.Trim()
-        Dim code As String = TextBoxCode.Text
+
+        Dim id As Integer
+        If Not Integer.TryParse(TextBoxID.Text.Trim(), id) Then
+            MsgBox("Please enter a valid student ID!")
+            Return
+        End If
+
+        Dim code As String = TextBoxCode.Text.Trim()
         Dim subject_registered As Boolean = False
-        Using connection As New MySqlConnection(connectionString)
-            connection.Open()
-            Dim query_check As String = "SELECT COUNT(*) FROM subject_registered WHERE StudentID = @id AND Subject_code = @code"
-            Using command_check As New MySqlCommand(query_check, connection)
-                command_check.Parameters.AddWithValue("@id", id)
-                command_check.Parameters.AddWithValue("@code", code)
-                Using reader As MySqlDataReader = command_check.ExecuteReader
-                    If reader.Read() Then
-                        Dim subjectcount As Integer = reader.GetInt32(0)
-                        If subjectcount > 0 Then
-                            subject_registered = True
+
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+
+                ' Check if the subject is already registered
+                Dim query_check As String = "SELECT COUNT(*) FROM subject_registered WHERE StudentID = @id AND Subject_code = @code"
+                Using command_check As New MySqlCommand(query_check, connection)
+                    command_check.Parameters.AddWithValue("@id", id)
+                    command_check.Parameters.AddWithValue("@code", code)
+                    Using reader As MySqlDataReader = command_check.ExecuteReader()
+                        If reader.Read() Then
+                            Dim subjectcount As Integer = reader.GetInt32(0)
+                            If subjectcount > 0 Then
+                                subject_registered = True
+                            End If
                         End If
-                    End If
+                    End Using
+                End Using
+
+                ' If the subject is already registered, show a message
+                If subject_registered Then
+                    MsgBox("This student has already registered this subject")
+                Else
+                    ' Insert the new subject registration
+                    Dim query As String = "INSERT INTO subject_registered(StudentID, Subject_code) VALUES (@id, @subject_code)"
+                    Using command As New MySqlCommand(query, connection)
+                        command.Parameters.AddWithValue("@id", id)
+                        command.Parameters.AddWithValue("@subject_code", code)
+                        command.ExecuteNonQuery()
+                    End Using
+                End If
+
+                ' Clear the DataGridView and load the updated registrations
+                DataGridView1.Rows.Clear()
+                Dim query2 As String = "SELECT * FROM subject_registered WHERE StudentID = @id"
+                Using command2 As New MySqlCommand(query2, connection)
+                    command2.Parameters.AddWithValue("@id", id)
+                    Using reader As MySqlDataReader = command2.ExecuteReader()
+                        While reader.Read()
+                            DataGridView1.Rows.Add(reader("StudentID").ToString(), reader("Subject_code").ToString())
+                        End While
+                    End Using
                 End Using
             End Using
 
-            If subject_registered Then
-                MsgBox("This student has already registered this subject")
-            Else
-                Dim query As String = "INSERT INTO subject_registered(StudentID, Subject_code) VALUES (@id, @subject_code)"
-                Using command As New MySqlCommand(query, connection)
-                    command.Parameters.AddWithValue("@id", id)
-                    command.Parameters.AddWithValue("@subject_code", code)
+            ' Clear the input fields
+            TextBoxCode.Clear()
+            TextBoxID.Clear()
 
-                    command.ExecuteNonQuery()
-                End Using
-            End If
-
-            DataGridView1.Rows.Clear()
-            Dim query2 As String = "SELECT * FROM subject_registered WHERE StudentID = @id"
-            Using command2 As New MySqlCommand(query2, connection)
-                command2.Parameters.AddWithValue("@id", id)
-                Using reader As MySqlDataReader = command2.ExecuteReader
-                    While reader.Read()
-                        DataGridView1.Rows.Add(reader("StudentID").ToString(), reader("Subject_code").ToString())
-                    End While
-                End Using
-            End Using
-        End Using
-        TextBoxCode.Clear()
-        TextBoxID.Clear()
+        Catch ex As MySqlException
+            MsgBox("Database error: " & ex.Message)
+        Catch ex As Exception
+            MsgBox("An error occurred: " & ex.Message)
+        End Try
     End Sub
 
     Private Sub ButtonDisplaySubject_Click(sender As Object, e As EventArgs) Handles ButtonDisplaySubject.Click
-        Label4.Visible = True
+        Dim subjectcode As String
+        Dim found As Boolean = False
+
+        Do
+            subjectcode = InputBox("Enter subject code: ")
+
+            ' Check if the user pressed Cancel or entered an empty string
+            If String.IsNullOrEmpty(subjectcode) Then
+                MsgBox("You must enter a subject code.")
+                Exit Do
+            End If
+
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+
+                Dim query As String = "SELECT s.Name FROM students s INNER JOIN subject_registered sr ON s.StudentID = sr.StudentID WHERE sr.Subject_code = @subjectcode"
+                Using command As New MySqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@subjectcode", subjectcode)
+                    Using reader As MySqlDataReader = command.ExecuteReader()
+                        If reader.HasRows Then
+                            ListBox1.Items.Clear()
+
+                            ListBox1.Items.Add(subjectcode)
+                            Dim count As Integer = 1
+                            While reader.Read()
+                                ListBox1.Items.Add(count & ": " & reader("Name").ToString())
+                                count += 1
+                            End While
+                            found = True
+                        End If
+                    End Using
+                End Using
+            End Using
+
+            If Not found Then
+                MsgBox("The subject code you enter doesn't exist!")
+            End If
+
+        Loop While Not found
     End Sub
 
     Private Sub ButtonPrint_Click(sender As Object, e As EventArgs) Handles ButtonPrint.Click
+        Dim pdfFilePath As String = "../../../../Slip/Slip.pdf"
+        CreatePdf(pdfFilePath)
 
+        If System.IO.File.Exists(pdfFilePath) Then
+            Try
+                Dim processInfo As New ProcessStartInfo()
+                processInfo.FileName = pdfFilePath
+                processInfo.UseShellExecute = True
+
+                Process.Start(processInfo)
+            Catch ex As Exception
+                MessageBox.Show("An error occurred while trying to print the PDF: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        Else
+            MessageBox.Show("The PDF file was not created successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
     End Sub
 
     Private Sub ButtonDisplayCredit_Click(sender As Object, e As EventArgs) Handles ButtonDisplayCredit.Click
-        Dim id As Integer = TextBoxID.Text.Trim()
-        If String.IsNullOrEmpty(id) Then
-            MsgBox("Please enter a student ID!")
+        Dim id As Integer
+        If Not Integer.TryParse(TextBoxID.Text.Trim(), id) Then
+            MsgBox("Please enter a valid student ID!")
             Return
         End If
+
         Dim credit As Integer = 0
-        Using connection As New MySqlConnection(connectionString)
-            connection.Open()
-            Dim query As String = "SELECT SUM(s.Credit) FROM subject s INNER JOIN subject_registered sr ON sr.Subject_code
-                                    = s.Subject_code WHERE sr.StudentID = @studentID"
-            Using command As New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@studentID", id)
-                Using reader As MySqlDataReader = command.ExecuteReader
-                    If reader.Read() Then
-                        If Not reader.IsDBNull(0) Then
-                            credit = reader.GetInt32(0)
+
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+                Dim query As String = "SELECT SUM(s.Credit) FROM subject s INNER JOIN subject_registered sr ON sr.Subject_code = s.Subject_code WHERE sr.StudentID = @studentID"
+                Using command As New MySqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@studentID", id)
+                    Using reader As MySqlDataReader = command.ExecuteReader()
+                        If reader.Read() Then
+                            If Not reader.IsDBNull(0) Then
+                                credit = reader.GetInt32(0)
+                            End If
                         End If
-                    End If
+                    End Using
                 End Using
             End Using
-        End Using
-        MsgBox("The total credit of this student is " + credit.ToString())
+
+            MsgBox("The total credit of this student is " + credit.ToString())
+        Catch ex As MySqlException
+            MsgBox("Database error: " & ex.Message)
+        Catch ex As Exception
+            MsgBox("An error occurred: " & ex.Message)
+        End Try
     End Sub
 
     Private Sub ButtonDisplayFee_Click(sender As Object, e As EventArgs) Handles ButtonDisplayFee.Click
-        Dim id As Integer = TextBoxID.Text.Trim()
-        If String.IsNullOrEmpty(id) Then
-            MsgBox("Please enter a student ID!")
+        Dim id As Integer
+        If Not Integer.TryParse(TextBoxID.Text.Trim(), id) Then
+            MsgBox("Please enter a valid student ID!")
             Return
         End If
+
         Dim fee As Integer = 0
-        Using connection As New MySqlConnection(connectionString)
-            connection.Open()
-            Dim query As String = "SELECT SUM(s.Fee) FROM subject s INNER JOIN subject_registered sr ON sr.Subject_code
-                                    = s.Subject_code WHERE sr.StudentID = @studentID"
-            Using command As New MySqlCommand(query, connection)
-                command.Parameters.AddWithValue("@studentID", id)
-                Using reader As MySqlDataReader = command.ExecuteReader
-                    If reader.Read() Then
-                        If Not reader.IsDBNull(0) Then
-                            fee = reader.GetInt32(0)
+
+        Try
+            Using connection As New MySqlConnection(connectionString)
+                connection.Open()
+                Dim query As String = "SELECT SUM(s.Fee) FROM subject s INNER JOIN subject_registered sr ON sr.Subject_code = s.Subject_code WHERE sr.StudentID = @studentID"
+                Using command As New MySqlCommand(query, connection)
+                    command.Parameters.AddWithValue("@studentID", id)
+                    Using reader As MySqlDataReader = command.ExecuteReader()
+                        If reader.Read() Then
+                            If Not reader.IsDBNull(0) Then
+                                fee = reader.GetInt32(0)
+                            End If
                         End If
-                    End If
+                    End Using
                 End Using
             End Using
-        End Using
-        MsgBox("The total fee needed to pay by this student is " + fee.ToString())
+
+            MsgBox("The total fee needed to pay by this student is " + fee.ToString())
+        Catch ex As MySqlException
+            MsgBox("Database error: " & ex.Message)
+        Catch ex As Exception
+            MsgBox("An error occurred: " & ex.Message)
+        End Try
     End Sub
 
     Private Sub ButtonEmail_Click(sender As Object, e As EventArgs) Handles ButtonEmail.Click
