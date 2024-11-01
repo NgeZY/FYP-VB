@@ -122,21 +122,17 @@ Public Class Registrationform
     End Sub
 
     Private Sub ButtonPrint_Click(sender As Object, e As EventArgs) Handles ButtonPrint.Click
-        Dim pdfFilePath As String = "../../../../Slip/Slip.pdf"
-        CreatePdf(pdfFilePath)
+        Dim filePath As String = "Slip/Slip.pdf"
+        CreatePdf(filePath)
 
-        If System.IO.File.Exists(pdfFilePath) Then
+        If File.Exists(filePath) Then
             Try
-                Dim processInfo As New ProcessStartInfo()
-                processInfo.FileName = pdfFilePath
-                processInfo.UseShellExecute = True
-
-                Process.Start(processInfo)
+                Process.Start(filePath)
             Catch ex As Exception
-                MessageBox.Show("An error occurred while trying to print the PDF: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("An error occurred while trying to open the PDF: " & ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End Try
         Else
-            MessageBox.Show("The PDF file was not created successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("The PDF file was not found at: " & filePath, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 
@@ -207,7 +203,7 @@ Public Class Registrationform
     End Sub
 
     Private Sub ButtonEmail_Click(sender As Object, e As EventArgs) Handles ButtonEmail.Click
-        Dim pdfFilePath As String = "../../../../Slip/Slip.pdf"
+        Dim pdfFilePath As String = "Slip/Slip.pdf"
         CreatePdf(pdfFilePath)
 
         Dim email As String = InputBox("Enter student email: ")
